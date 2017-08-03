@@ -16,7 +16,7 @@ echo "Done."
 
 #Install Maven 
 echo "Install Maven 3 to machine..."
-sudo wget http://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo -O /etc/yum.repos.d/epel-apache-maven.repo
+sudo wget -q http://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo -O /etc/yum.repos.d/epel-apache-maven.repo
 yum install -y apache-maven
 #check Install
 mvn -version
